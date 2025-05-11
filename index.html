@@ -1,14 +1,73 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>FORSANLUX</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fff;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      background-color: #f4f4f4;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #2c3e50;
+      flex: 1;
+      text-align: left;
+    }
+
+    .search-bar {
+      flex: 2;
+      display: flex;
+      justify-content: center;
+      padding: 10px 0;
+    }
+
+    .search-bar input[type="text"] {
+      width: 80%;
+      max-width: 500px;
+      padding: 10px 15px;
+      border: 1px solid #ccc;
+      border-radius: 25px;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .search-bar input[type="text"]:focus {
+      border-color: #555;
+      outline: none;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-  <header>FORSANLUX</header>
-  
 
-  
-                                                  
+  <header>
+    <div class="logo">FORSANLUX</div>
+    <div class="search-bar">
+      <input type="text" placeholder="Rechercher des produits...">
+    </div>
+  </header>
+
+</body>
+</html>
